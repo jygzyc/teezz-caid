@@ -1,20 +1,17 @@
 
 ## Setup and Run
 
-Clone repo and use the `Makefile` to build/run docker.
+Clone repo and use the `Makefile` to build/run 
 
+```bash
+$ make help
+help                 Show this help
+init                 Init tools
+run                  Run command
+test                 Run test
 ```
-$ git clone --recursive git@github.com:HexHive/teezz-caid.git
-$ cd teezz-caid
-$ make build
-$ make run DEVICE_ID=<device id> LIB_PATH=<on-device tee lib path>
-```
 
-By default, we map `<repo>/inout` into the docker container. All results can
-be found there.
-
-See `Dockerfile` for dependencies.
-See `docker/docker-entrypoint.sh` for more usage info.
+You need run **init** to build it first, then run **make run** to run
 
 ## Dependency Graphs
 
@@ -36,9 +33,7 @@ Some illustrations of TEE library dependencies.
 
 ![](/images/p9lite.png)
 
-## Troubleshooting
 
-Q: I cannot see my Android device inside of the container.
+## Reference
 
-A: Kill the adb server on the host (`adb kill-server`) and try again.
-
+- [HexHive/teezz-caid](https://github.com/HexHive/teezz-caid)

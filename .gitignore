@@ -1,3 +1,10 @@
 *.txt
 __pycache__/
 .venv/
+src_backup/
+
+inout/
+logs/
+
+vdexExtractor/
+jadx/
