@@ -22,14 +22,6 @@ def build_parser():
         help="Working directory for intermediate files."
              " Will create a tmpdir if omitted."
     )
-    # parser.add_argument(
-    #     "-s",
-    #     "--sourcedir",
-    #     dest="source_dir",
-    #     help="Directory used as output for decompiled source-files of"
-    #          " dex-files. Default value is 'workdir/jadx-source'.",
-    #     required=False
-    # )
     parser.add_argument(
         "-l",
         "--logconfig",

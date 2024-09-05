@@ -133,9 +133,10 @@ class DependencyFinder(object):
         return deps
 
     ################################################################################
-    # jar files
+    # JAR files
     ################################################################################
     
+    # TODO: update java jar dependencies
 
     ################################################################################
     # VDEX files
@@ -448,7 +449,7 @@ class DependencyFinder(object):
         if elf_list is not None:
             dependencies = self.build_dependency_graph(
                 elf_list=elf_list,
-                vdex_list=None,
+                vdex_list=None, # Not completed
                 apk_list=None,
                 dep_root=self.target_lib
             )

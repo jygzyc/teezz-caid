@@ -27,7 +27,7 @@ class TestDependencyFinderModule(unittest.TestCase):
         self.elf_work_dir = os.path.join(self.work_dir, "Elf")
         target_file_list_path = os.path.join(self.work_dir, "Elf.json")
         self.elf_list = import_executables_from_json(target_file_list_path, Elf)
-        elf = Elf.parse_elf("vendor/lib64/vendor.vivo.hardware.trust@1.0.so", self.elf_work_dir)
+        elf = Elf.parse_elf("vendor/lib64/xxxxx.so", self.elf_work_dir)
         # self.assertEqual(self.dfm._build_dependency_graph_helper_elf(elf, self.elf_list), RESULT)
    
     @unittest.skip
